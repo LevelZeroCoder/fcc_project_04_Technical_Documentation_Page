@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Python Documentation - by LevelZeroCoder</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav id="navbar">
+		<header>
+			<h1>Python</h1>
+			<p>Documentation</p>
+		</header>
+		<ul>
+			<li><a class="nav-link" href="#Introduction">Introduction</a></li>
+			<li><a class="nav-link" href="#Getting_Started">Getting Started</a></li>			
+			<li><a class="nav-link" href="#Variables">Variables</a></li>
+			<li><a class="nav-link" href="#Datatypes">Datatypes</a></li>
+			<li><a class="nav-link" href="#Numbers">Numbers</a></li>
+			<li><a class="nav-link" href="#Operators">Operators</a></li>
+			<li><a class="nav-link" href="#Lists">Lists</a></li>
+			<li><a class="nav-link" href="#Conditions">Conditions</a></li>
+			<li><a class="nav-link" href="#Loops">Loops</a></li>
+			<li><a class="nav-link" href="#Functions">Functions</a></li>
+			<li><a class="nav-link" href="#Reference">Reference</a></li>
+		</ul>
+	</nav>
+	<main id="main-doc">
+		<section class="main-section" id="Introduction">
+			<header><h2>Introduction</h2></header>
+			<p><span>Python</span> is a widely used programming language in the world. It was created by Guido van Rossum, and released in 1991. Python is a high-level language, meaning it has similar terms or words like english language. It is also easy to learn, write and understand python.</p>
+			<h3>Python is used in</h3>
+			<ul>
+				<li>web development (server-side)</li>
+				<li>software development</li>
+				<li>mathematics</li>
+				<li>system scripting</li>
+			</ul>
+			<h3>What can Python do?</h3>
+			<p>Python can</p>
+			<ul>
+				<li>be used on a server to create web applications.</li>
+				<li>be used alongside software to create workflows.</li>
+				<li>connect to database systems. It can also read and modify files.</li>
+				<li>be used to handle big data and perform complex mathematics.</li>
+				<li>be used for rapid prototyping, or for production-ready software development.</li>
+			</ul>
+			<h3>Why use Python?</h3>
+			<p>Python</p>
+			<ul>
+				<li>works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+				<li>has a simple syntax similar to the English language.</li>
+				<li>has syntax that allows developers to write programs with fewer lines than some other programming languages.</li>
+				<li>runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.</li>
+				<li>can be treated in a procedural way, an object-oriented way or a functional way.</li>
+			</ul>
+			<h3>Python Syntax compared to other programming languages</h3>
+			<ul>
+				<li>Python was designed for readability, and has some similarities to the English language with influence from mathematics.</li>
+				<li>Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.</li>
+				<li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</li>
+			</ul>
+			
+			<h3>Requirements</h3>
+			<p>Python is relativeley Easy to Learn and Understand Programming language than most other. It runs on most ordinary machines. Users can also Learn and apply majority of the concepts using an ordinary setup. For starters any ordinary laptop/PC/Macbook would do. Python doesn't require an internet connection to run either.</p>
+		</section>
+		<section class="main-section" id="Getting_Started">
+			<header><h2>Getting Started</h2></header>
+			<h3>Python Install</h3>
+			<p>The most recent major version of Python is Python 3,However, Python 2, although not being updated with anything other than security updates, is still quite popular. Python will be written in a text editor. It is possible to write Python in an Integrated Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when managing larger collections of Python files.</p>
+			<p>Many PCs and Macs will have python already installed. To check if you have python installed,</p>
+			<h3>On Windows PC</h3>
+			<p>search in the start bar for Python or run the following on the Command Line (cmd.exe):</p>
+			<pre>C:\Users\Your Name>python --version </pre>
+			<h3>on a Linux or Mac</h3>
+			<p>on linux open the command line or on Mac open the Terminal and type:</p>
+			<pre>python --version</pre>
+			<p>If you find that you do not have Python installed on your computer, then you can download it for free from the following website: </p><a href="https://www.python.org/" target="_blank">https://www.python.org</a>
+			<h3>Writing your first Program</h3>
+			<p>Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed.</p>
+			<h3>Using Text editor</h3>
+			<p>Let's write our first Python file, called helloworld.py, which can be done in any text editor.</p>
+			<ul>
+				<li>Open Text editor</li>
+				<li>type print("Hello, World!")</li>
+				<li>Now save the file as <span>helloworld.py</span></li>
+			</ul>
+			<p>Now to run the program, Open your command line, navigate to the directory where you saved your file, and run:</p>
+			<pre>C:\Users\Your Name>python helloworld.py</pre>
+			<p>The output should read:</p>
+			<pre>Hello, World!</pre>
+			<h3>Using Python Command Line</h3>
+			<p>Python can be run as a command line itself.</p>
+			<p>Type the following on the Windows, Mac or Linux command line:</p>
+			<pre>C:\Users\Your Name>python</pre>
+			<p>Or, if the "python" command did not work, you can try "py":</p>
+			<pre>C:\Users\Your Name>py</pre>
+			<p>From there you can write any python, including our hello world example from earlier in the tutorial:</p>
+			<pre>
+				C:\Users\Your Name>python
+				Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
+				Type "help", "copyright", "credits" or "license" for more information.
+				>>> print("Hello, World!")
+			</pre>
+			<p>Which will write</p>
+			<p>"Hello, World!" in the command line:</p>
+			<pre>
+				C:\Users\Your Name>python
+				Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
+				Type "help", "copyright", "credits" or "license" for more information.
+				>>> print("Hello, World!")
+				Hello, World!
+			</pre>
+			<p>Whenever you are done in the python command line, you can simply type the following to quit the python command line interface:</p>
+			<code>exit()
+			</code>
+			<h3>Syntax</h3>
+			<p>Python syntax can be executed by writing directly in the Command Line:</p>
+			<pre>
+				>>> print("Hello, World!")
+				Hello, World!
+			</pre>
+			<p>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:</p>
+			<code>C:\Users\Your Name>python myfile.py
+			</code>
+			<h3>Python Indentation</h3>
+			<p>Indentation refers to the spaces at the beginning of a code line. Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important. Python uses indentation to indicate a block of code.</p>
+			<p>Example</p>
+			<pre>
+				if 5 > 2:
+				&nbsp;print("Five is greater than two!")
+			</pre>
+			<p>The Output will be:</p>
+			<code>Five is greater than two!
+			</code>
+			<p>Python will give you an error if you skip the indentation:</p>
+			<p>Below example will give a Syntax Error:</p>
+			<pre>
+				if 5 > 2:
+				print("Five is greater than two!")
+			</pre>
+			<p>The Output will be:</p>
+			<pre>
+				File "demo_indentation_test.py", line 2
+					print("Five is greater than two!")
+				        ^
+				IndentationError: expected an indented block 
+			</pre>
+
+			<p>The number of spaces is up to you as a programmer, but it has to be at least one.</p>
+			<p>Example</p>
+			<pre>
+				if 5 > 2:
+				&nbsp;print("Five is greater than two!")
+				if 5 > 2:
+				&nbsp;&nbsp;&nbsp;&nbsp;print("Five is greater than two!")
+			</pre>
+			<p>The output will be:</p>
+			<code>Five is greater than two!
+				Five is greater than two!
+			</code>		
+			<h3>Comments</h3>
+			<p>Python has commenting capability for the purpose of in-code documentation. Comments start with a #, and Python will render the rest of the line as a comment.</p>
+			<p>Python Comments can be used to</p>
+			<ul>
+				<li>explain Python code.</li>
+				<li>make the code more readable.</li>
+				<li>prevent execution when testing code.</li>
+			</ul>
+			<p>Example for Comments in Python:</p>
+			<pre>
+				#This is a comment.
+				print("Hello, World!")
+			</pre>
+			<h3>Multi Line Comments</h3>
+			<p>Python does not really have a syntax for multi line comments. To add a multiline comment you could insert a # for each line</p>
+			<p>Example</p>
+			<pre>
+				#This is a comment
+				#written in
+				#more than just one line
+				print("Hello, World!")
+			</pre>
+		</section>
+		<section class="main-section" id="Variables">
+			<header><h2>Variables</h2></header>
+			<p>Variables are containers for storing data values. In Python, variables are created when you assign a value to it.</p>
+			<p>Example for Variables in Python:</p>
+			<pre>
+				x = 5
+				y = "Hello, World!"
+			</pre>
+			<h3>Creating Variables</h3>
+			<p>Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.</p>
+			<p>Example</p>
+			<pre>
+				x = 5
+				y = "John"
+				print(x)
+				print(y)
+			</pre>
+			<p>Variable names are case-sensitive.</p>
+			<p>Example</p>	
+			<pre>
+				a = 4
+				A = "Sally"
+				#A will not overwrite a
+			</pre>
+			<p>The above code will create two variables. and to see how it actually works</p>
+			<p>Program</p>
+			<pre>
+				a = 4
+				A = "Sally"
+				print(a)
+				print(A)
+			</pre>
+			<p>The output will be</p>
+			<pre>
+				4
+				Sally
+			</pre>
+			<h3>Variable Names</h3>
+			<p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).</p>
+			<p>Rules for Python variables</p>
+			<ul>
+				<li>A variable name must start with a letter or the underscore character</li>
+				<li>A variable name cannot start with a number</li>
+				<li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+				<li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+			</ul>
+			<p>variable names which are <span>permitted</span></p>
+			<ul>
+				<li>myvar = "John"</li>
+				<li>my_var = "John"</li>
+				<li>_my_var = "John"</li>
+				<li>myVar = "John"</li>
+				<li>MYVAR = "John"</li>
+				<li>myvar2 = "John"</li>
+			</ul>
+    		<p>variable names which are <span>NOT permitted</span></p>
+			<ul>
+				<li>2myvar = "John"</li>
+				<li>my-var = "John"</li>
+				<li>my var = "John"</li>
+			</ul>
+			<h3>Global Variables and Local Variables</h3>
+			<p>Variables that are created outside of a function are known as global variables. Where, Variables created inside a function are known as Local Variables. Global variables can be used by everyone, both inside of functions and outside. Whereas Local variable can only be used inside that particular function</p>
+			<p>Example</p>
+			<pre>
+				x = "drink"
+				def firstfunc():
+				&nbsp;y = "coffee"
+				&nbsp;print(y + " is a great " + x)
+				def secondfunc():
+				&nbsp;y = "tea"
+				&nbsp;print(y + " is a great " + x)
+				def thirdfunc():
+				&nbsp;y = "juice"
+				&nbsp;x = "beverage"
+				&nbsp;print(y + " is a great " + x)
+				print("*** First function output ***")
+				firstfunc()
+				print("\n*** Second function output ***")
+				secondfunc()
+				print("\n*** Third function output ***")
+				thirdfunc()
+			</pre>
+			<p>The output will be</p>
+			<pre>
+				*** First function output ***
+				coffee is a great drink
+
+				*** Second function output ***
+				tea is a great drink
+
+				*** Third function output ***
+				juice is a great beverage
+			</pre>
+			<p>In the above code,</p>
+			<ul>
+				<li>The variable x declared outside the functions is the global variable.</li>
+				<li>The variables declared inside the functions are considered as local variables.</li>
+				<li>The Global variable x can be used in either functions.</li>
+				<li>Local variables can only be used in whicherver functions they are associated with.</li>
+			</ul>
+			<p>Even though the variable y is declared in all functions, They are all considered as local variables. As such they are all considered separate and have their own values. Also inside the third function, there's a variable with the same name as the Global variable x, but since its declared inside a function,it is treated as a Local Variable associated with that function only. and such practice is allowed.</p>
+			<p>However, note that, while executing the code, the program takes the value for the local variable. This is because when two Variables (Global and Local) has the same name, inside a function the program always gives precedence to the Local variable declared in that function and the value for the Local variable is executed. However, in the above example the value for both Global and Local variable x remains separate, even after the third function executes the code. The value for x is not replaced, because, both are separate variables.</p>
+			<p><span>Note: </span>The term \n which used in the code is used for telling the program to execute the code in a new line</p>
+		</section>
+		<section class="main-section" id="Datatypes">
+			<header><h2>Datatypes</h2></header>
+			<p>In programming, data type is an important concept. Variables can store data of different types, and different types can do different things. Python has the following data types built-in by default, in these categories:</p>
+			<ul>
+				<li>Text Type: str</li>
+				<li>Numeric Types: int, float, complex</li>
+				<li>Sequence Types: list, tuple, range</li>
+				<li>Mapping Type: dict</li>
+				<li>Set Types: set, frozenset</li>
+				<li>Boolean Type: bool</li>
+				<li>Binary Types: bytes, bytearray, memoryview</li>
+			</ul>
+			<p>Users can get the data type of any object by using the type() function:</p>
+			<p>Example to Print the data type of the variables</p>
+			<pre>
+				x = 5
+				y = 5.0
+				z = "5"
+				print(type(x))
+				print(type(y))
+				print(type(z))
+			</pre>
+			<p>The Output will be</p>
+			<pre>
+				int
+				float
+				str
+			</pre>
+			<p>Note that in the third variable z, the variable is declared as a string, so it treats 5 as a character instead of number 5</p>
+
+			<h3>Setting the Data Type</h3>
+			<p>In Python, the data type is set when you assign a value to a variable:</p>
+			<div class="table">
+				<div class="row table-title">
+					<div class="col"><span></span>Example</div><div class="col"><span>Data Type</span></div>
+				</div>
+				<div class="row">
+					<div class="col">x = "Hello World"</div><div class="col">str</div>
+				</div>
+				<div class="row">
+					<div class="col">x = 20</div><div class="col">int</div>
+				</div>
+				<div class="row">
+					<div class="col">x = 20.5</div><div class="col">float</div>
+				</div>
+				<div class="row">
+					<div class="col">x = 1j</div><div class="col">complex</div>
+				</div>
+				<div class="row">
+					<div class="col">x = ["apple", "banana", "cherry"]</div><div class="col">list</div>
+				</div>
+				<div class="row">
+					<div class="col">x = ("apple", "banana", "cherry")</div><div class="col">tuple</div>
+				</div>
+				<div class="row">
+					<div class="col">x = range(6)</div><div class="col">range</div>
+				</div>
+				<div class="row">
+					<div class="col">x = {"name" : "John", "age" : 36}</div><div class="col">dict</div>
+				</div>
+				<div class="row">
+					<div class="col">x = {"apple", "banana", "cherry"}</div><div class="col">set</div>
+				</div>
+				<div class="row">
+					<div class="col">x = frozenset({"apple", "banana", "cherry"})</div><div class="col">frozenset</div>
+				</div>
+				<div class="row">
+					<div class="col">x = True</div><div class="col">bool</div>
+				</div>
+				<div class="row">
+					<div class="col">x = b"Hello"</div><div class="col">bytes</div>
+				</div>
+				<div class="row">
+					<div class="col">x = bytearray(5)</div><div class="col">bytearray</div>
+				</div>
+				<div class="row">
+					<div class="col">x = memoryview(bytes(5))</div><div class="col">memoryview</div>
+				</div>
+			</div>
+		</section>
+		<section class="main-section" id="Numbers">
+			<header><h2>Numbers</h2></header>
+			<p>There are three numeric types in Python:</p>
+			<ul>
+				<li>int</li>
+				<li>float</li>
+				<li>complex</li>
+			</ul>
+			<p>Variables of numeric types are created when you assign a value to them:</p>
+			<p>Example</p>
+			<pre>
+				x = 1    # int
+				y = 2.8  # float
+				z = 1j   # complex
+			</pre>
+			<h3>Int</h3>
+			<p>Int, or integer, is a whole number, either positive or negative, without decimals, of unlimited length.</p>
+			<p>Example:</p>
+			<p>x = 1, y = 35656222554887711, z = -3255522</p>
+			<h3>Float</h3>
+			<p>Float, or "floating point number" is a number, positive or negative, containing one or more decimals.</p>
+			<p>Example</p>
+			<p>x = 1.10, y = 1.0, z = -35.59</p>
+			<p>Float can also be scientific numbers with an "e" to indicate the power of 10.</p>
+			<p>Example</p>
+			<p>x = 35e3, y = 12E4, z = -87.7e100</p>
+			<h3>Complex</h3>
+			<p>Complex numbers are written with a "j" as the imaginary part.</p>
+			<p>Example:</p>
+			<p>x = 3+5j, y = 5j, z = -5j</p>
+			<h3>Strings</h3>
+			<p>String is another datatype in python which used to represent characters. Strings are surrounded by either single quotation marks, or double quotation marks.</p>
+			<p>'hello' is the same as "hello".</p>
+			<p>You can display a string with the print() function:</p>
+			<pre>
+				print("Hello")
+				print('Hello')
+			</pre>
+			<p>The output will be printed as</p>
+			<code>Hello
+				Hello				
+			</code>
+			<h3>Assign String to a Variable</h3>
+			<p>Assigning a string to a variable is done with the variable name followed by an equal sign and the string:</p>
+			<pre>
+				a = "Hello"
+				print(a)
+			</pre>
+			<h3>Multiline Strings</h3>
+			<p>You can assign a multiline string to a variable by using three double quotes:</p>
+			<pre>
+				a = """Lorem ipsum dolor sit amet,
+				consectetur adipiscing elit,
+				sed do eiusmod tempor incididunt
+				ut labore et dolore magna aliqua."""
+				print(a)
+			</pre>
+			<p>or you can use single quotes as well</p>
+			<pre>
+				a = '''Lorem ipsum dolor sit amet,
+				consectetur adipiscing elit,
+				sed do eiusmod tempor incididunt
+				ut labore et dolore magna aliqua.'''
+				print(a)
+			</pre>
+			<p>In both cases the output will be printed as:</p>
+			<pre>
+				Lorem ipsum dolor sit amet,
+				consectetur adipiscing elit,
+				sed do eiusmod tempor incididunt
+				ut labore et dolore magna aliqua.
+			</pre>
+			<p>Note: in the result, the line breaks are inserted at the same position as in the code.</p>
+			<h3>Booleans</h3>
+			<p>Booleans represent one of two values: True or False. In programming you often need to know if an expression is True or False. You can evaluate any expression in Python, and get one of two answers, True or False. When you compare two values, the expression is evaluated and Python returns the Boolean answer.</p>
+			<p>Example</p>
+			<pre>
+				print(10 &gt; 9)
+				print(10 == 9)
+				print(10 &lt; 9)
+			</pre>
+			<p>The output will be:</p>
+			<code>True
+				False
+				False
+			</code>
+			<p>When you run a condition in an if statement, Python returns True or False</p>
+			<p>Example</p>
+			<pre>
+				a = 200
+				b = 33
+				if b &gt; a:
+				&nbsp;print("b is greater than a")
+				else:
+				&nbsp;print("b is not greater than a")
+			</pre>
+			<p>The output is printed as:</p>
+			<code>b is not greater than a
+			</code>
+		</section>
+		<section class="main-section" id="Operators">
+			<header><h2>Operators</h2></header>
+			<p>Python Operators are used to perform operations such as Adding, Subtracting, Comparing etc. on variables and its values.</p>
+			<p>Python divides the operators in the following groups:</p>
+			<ul>
+				<li>Arithmetic operators</li>
+				<li>Assignment operators</li>
+				<li>Comparison operators</li>
+				<li>Logical operators</li>
+				<li>iIdentity operators</li>
+				<li>Membership operators</li>
+				<li>Bitwise operators</li>
+			</ul>
+			<h3>Python Arithmetic Operators</h3>
+			<p>Arithmetic operators are used with numeric values to perform common mathematical operations:
+			<div class="table">
+				<div class="row table-title">
+					<div class="col"><span>Operator</span></div><div class="col"><span>Name</span></div><div class="col"><span>Example</span></div>
+				</div>
+				<div class="row">
+					<div class="col">-</div><div class="col">Subtraction</div><div class="col">x - y</div>
+				</div>
+				<div class="row">
+					<div class="col">+</div><div class="col">Addition</div><div class="col">x + y</div>
+				</div>
+				<div class="row">
+					<div class="col">*</div><div class="col">Multiplication</div><div class="col">x * y</div>
+				</div>
+				<div class="row">
+					<div class="col">/</div><div class="col">Division</div><div class="col">x / y</div>
+				</div>
+				<div class="row">
+					<div class="col">%</div><div class="col">Modulus</div><div class="col">x % y</div>
+				</div>
+				<div class="row">
+					<div class="col">**</div><div class="col">Exponentiation</div><div class="col">x ** y</div>
+				</div>
+				<div class="row">
+					<div class="col">//</div><div class="col">Floor division</div><div class="col">x // y</div>
+				</div>
+			</div>
+			<h3>Python Assignment Operators</h3>
+			<p>Assignment operators are used to assign values to variables</p>
+			<div class="table">
+				<div class="row table-title">
+					<div class="col"><span>Operator</span></div><div class="col"><span>Example</span></div><div class="col"><span>Same as</span></div>
+				</div>
+				<div class="row">
+					<div class="col">=</div><div class="col">x = 5</div><div class="col">x = 5</div>
+				</div>
+				<div class="row">
+					<div class="col">+=</div><div class="col">x += 3</div><div class="col">x = x + 3</div>
+				</div>
+				<div class="row">
+					<div class="col">-=</div><div class="col">x -= 3</div><div class="col">x = x - 3</div>
+				</div>
+				<div class="row">
+					<div class="col">*=</div><div class="col">x *= 3</div><div class="col">x = x * 3</div>
+				</div>
+				<div class="row">
+					<div class="col">/=</div><div class="col">x /= 3</div><div class="col">x = x / 3</div>
+				</div>
+				<div class="row">
+					<div class="col">%=</div><div class="col">x %= 3</div><div class="col">x = x % 3</div>
+				</div>
+				<div class="row">
+					<div class="col">//=</div><div class="col">x //= 3</div><div class="col">x = x // 3</div>
+				</div>
+				<div class="row">
+					<div class="col">**=</div><div class="col">x **= 3</div><div class="col">x = x ** 3</div>
+				</div>
+				<div class="row">
+					<div class="col">&=</div><div class="col">x &= 3</div><div class="col">x = x & 3</div>
+				</div>
+				<div class="row">
+					<div class="col">|=</div><div class="col">x |= 3</div><div class="col">x = x | 3</div>
+				</div>
+				<div class="row">
+					<div class="col">^=</div><div class="col">x ^= 3</div><div class="col">x = x ^ 3</div>
+				</div>
+				<div class="row">
+					<div class="col">&gt;&gt;=</div><div class="col">x &gt;&gt;= 3</div><div class="col">x = x &gt;&gt; 3</div>
+				</div>
+				<div class="row">
+					<div class="col">&lt;&lt;=</div><div class="col">x &lt;&lt;= 3</div><div class="col">x = x &lt;&lt; 3</div>
+				</div>
+			</div>
+			<h3>Python Comparison Operators</h3>
+			<p>Comparison operators are used to compare two values.</p>
+			<div class="table">
+				<div class="row table-title">
+					<div class="col"><span>Operator</span></div><div class="col"><span>Name</span></div><div class="col"><span>Example</span></div>
+				</div>
+				<div class="row">
+					<div class="col">==</div><div class="col">Equal</div><div class="col">x == y</div>
+				</div>
+				<div class="row">
+					<div class="col">!=</div><div class="col">Not equal</div><div class="col">x != y</div>
+				</div>
+				<div class="row">
+					<div class="col">&gt;</div><div class="col">Greater than</div><div class="col">x &gt; y</div>
+				</div>
+				<div class="row">
+					<div class="col">&lt;</div><div class="col">Less than</div><div class="col">x &lt; y</div>
+				</div>
+				<div class="row">
+					<div class="col">&gt;=</div><div class="col">Greater than or equal to</div><div class="col">x &gt;= y</div>
+				</div>
+				<div class="row">
+					<div class="col">&lt;=</div><div class="col">Less than or equal to</div><div class="col">x &lt;= y</div>
+				</div>
+			</div>
+			<h3>Python Logical Operators</h3>
+			<p>Logical operators are used to combine conditional statements</p>
+			<div class="table">
+			<div class="row table-title">
+				<div class="col"><span>Operator</span></div><div class="col"><span>Description</span></div><div class="col"><span>Example</span></div>
+			</div>
+			<div class="row">
+				<div class="col">and</div><div class="col">Returns True if both statements are true</div><div class="col">x &lt; 5 and  x &lt; 10</div>
+			</div>
+			<div class="row">
+				<div class="col">or</div><div class="col">Returns True if one of the statements is true</div><div class="col">x &lt; 5 or x &lt; 4</div>
+			</div>
+			<div class="row">
+				<div class="col">not</div><div class="col">Reverse the result, returns False if the result is true</div><div class="col">not(x &lt; 5 and x &lt; 10)</div>
+			</div>
+		</div>
+		<h3>Python Identity Operators</h3>
+		<p>Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location.</p>
+		<div class="table">
+			<div class="row table-title">
+				<div class="col"><span>Operator</span></div><div class="col"><span>Description</span></div><div class="col"><span>Example</span></div>
+			</div>
+			<div class="row">
+				<div class="col">is</div><div class="col">Returns True if both variables are the same object</div><div class="col">x is y</div>
+			</div>
+			<div class="row">
+				<div class="col">is not</div><div class="col">Returns True if both variables are not the same object</div><div class="col">x is not y</div>
+			</div>
+		</div>
+		<h3>Python Membership Operators</h3>
+		<p>Membership operators are used to test if a sequence is presented in an object.</p>
+		<div class="table">
+			<div class="row table-title">
+				<div class="col"><span>Operator</span></div><div class="col"><span>Description</span></div><div class="col"><span>Example</span></div>
+			</div>
+			<div class="row">
+				<div class="col">in</div><div class="col">Returns True if a sequence with the specified value is present in the object</div><div class="col">x in y</div>
+			</div>
+			<div class="row">
+				<div class="col">not in</div><div class="col">Returns True if a sequence with the specified value is not present in the object</div><div class="col">x not in y</div>
+			</div>
+		</div>
+		<h3>Python Bitwise Operators</h3>
+		<p>Bitwise operators are used to compare (binary) numbers.</p>
+		<div class="table">
+			<div class="row table-title">
+				<div class="col"><span>Operator</span></div><div class="col"><span>Name</span></div><div class="col"><span>Description</span></div>
+			</div>
+			<div class="row">
+				<div class="col">&</div><div class="col">AND</div><div class="col">Sets each bit to 1 if both bits are 1</div>
+			</div>
+			<div class="row">
+				<div class="col">|</div><div class="col">OR</div><div class="col">Sets each bit to 1 if one of two bits is 1</div>
+			</div>
+			<div class="row">
+				<div class="col">^</div><div class="col">XOR</div><div class="col">Sets each bit to 1 if only one of two bits is 1</div>
+			</div>
+			<div class="row">
+				<div class="col">~</div><div class="col">NOT</div><div class="col">Inverts all the bits</div>
+			</div>
+			<div class="row">
+				<div class="col">&lt;&lt;</div><div class="col">Zero fill left shift</div><div class="col">Shift left by pushing zeros in from the right and let the leftmost bits fall off</div>
+			</div>
+			<div class="row">
+				<div class="col">&gt;&gt;</div><div class="col">Signed right shift</div><div class="col">Shift right by pushing copies of the leftmost bit in from the left, and let the rightmost bits fall off</div>
+			</div>
+		</div>
+		</section>
+		<section class="main-section" id="Lists">
+			<header><h2>lists</h2></header>
+			<p>Lists are used to store multiple items in a single variable. Lists are also one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage. Lists are created using square brackets.</p>
+			<p>Example</p>
+			<pre>
+				thislist = ["apple", "banana", "cherry"]
+				&nbsp;print(thislist)
+			</pre>
+			<p>The output will be:</p>
+			<code>['apple', 'banana', 'cherry']
+			</code>
+			<h3>Ordered List</h3>
+			<p>In an Ordered list, the items are ordered, changeable, and allow duplicate values. List items are also indexed, the first item has index [0], the second item has index [1] etc. When we say that lists are ordered, it means the items have a defined order, and that order will not change. If you add new items to a list, the new items will be placed at the end of the list.</p>
+			<p>Note: There are some list methods that will change the order, but in general: the order of the items will not change.</p>
+			<h3>Changeable List</h3>
+			<p>In a Changeable List, we can change, add, and remove items in a list after it has been created. It also allow duplicates, since lists are indexed, lists can have items with the same value.</p>
+			<p>Example</p>
+			<pre>
+				thislist = ["apple", "banana", "cherry", "apple", "cherry"]
+				&nbsp;print(thislist)
+			</pre>
+			<p>The Output will be:</p>
+			<code>['apple', 'banana', 'cherry', 'apple', 'cherry']
+			</code>
+			<h3>List and Datatypes</h3>
+			<p>A list can contain items of multiple datatypes as well. Below is a list with strings, integers, boolean and float values</p>
+			<pre>
+				list1 = ["abc", 34, True, 40, "male", 3.14]
+				&nbsp;print(list1)
+			</pre>
+			<p>The output will be:</p>
+			<code>['abc', 34, True, 40, 'male', 3.14]
+			</code>
+		</section>
+		<section class="main-section" id="Conditions">
+			<header><h2>Conditions</h2></header>
+			<p>Python supports the usual logical conditions from mathematics.</p>
+			<ul>
+				<li>Equals: a == b</li>
+				<li>Not Equals: a != b</li>
+				<li>Less than: a &lt; b</li>
+				<li>Less than or equal to: a &lt;= b</li>
+				<li>Greater than: a &gt; b</li>
+				<li>Greater than or equal to: a &gt;= b</li>
+			</ul>
+			<p>These conditions can be used in several ways, most commonly used are "if statements","else statements","elif statements" and loops.</p>
+			<h3>If statements</h3>
+			<p>An "if statement" is written by using the if keyword.</p>
+			<pre>
+				a = 33
+				b = 200
+				if b > a:
+				&nbsp;print("b is greater than a")
+			</pre>
+			<p>The output will be:</p>
+			<pre>
+				b is greater than a
+			</pre>
+			<p>In above example we use two variables, a and b, which are used as part of the if statement to test whether b is greater than a. As a is 33, and b is 200, we know that 200 is greater than 33, and so we print to screen that "b is greater than a".</p>
+			<h3>Elif statements</h3>
+			<p>The elif keyword implies "if the previous conditions were not true, then try this condition".</p>
+			<pre>
+				a = 33
+				b = 33
+				if b > a:
+				&nbsp;print("b is greater than a")
+				elif a == b:
+				&nbsp;print("a and b are equal")
+			</pre>
+			<p>The output will be</p>
+			<pre>
+				a and b are equal
+			</pre>
+			<p>In above example a is equal to b, so the first condition is not true, but the elif condition is true, so we print to screen that "a and b are equal".</p>
+			<h3>Else Statements</h3>
+			<p>The else keyword executes if the condition hasn't been satisfied by any of the preceding statements.</p>
+			<pre>
+				a = 200
+				b = 33
+				if b > a:
+				&nbsp;print("b is greater than a")
+				elif a == b:
+				&nbsp;print("a and b are equal")
+				else:
+				&nbsp;print("a is greater than b")
+			</pre>
+			<p>The output will be:</p>
+			<pre>
+				a is greater than b
+			</pre>
+			<p>In above example a is greater than b, so the first condition is not true, also the elif condition is not true, so we go to the else condition and print to screen that "a is greater than b".</p>
+		</section>
+		<section class="main-section" id="Loops">
+			<header><h2>Loops</h2></header>
+			<p>Python has two primitive loop commands.</p>
+			<ul>
+				<li>while loop</li>
+				<li>for loops</li>
+			</ul>
+			<h3>While Loop</h3>
+			<p>With the while loop we can execute a set of statements as long as a condition is true.</p>
+			<p>The below rogram will print i as long as i is less than 6:</p>
+			<pre>
+				i = 1
+				while i < 6:
+				&nbsp;print(i)
+				&nbsp;i += 1
+			</pre>
+			<p>The output will be:</p>
+			<pre>
+				1
+				2
+				3
+				4
+				5
+			</pre>
+			<p>Note: Users need to remember to increment i, or else the loop will continue forever.</p>
+			<p>loops which executes forever are knows as infinite loops</p>
+			<h3>For Loop</h3>
+			<p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string). This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages. With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+			<p>Example</p>
+			<pre>
+				fruits = ["apple", "banana", "cherry"]
+				for x in fruits:
+				&nbsp;print(x)
+			</pre>
+			<p>The output will be:</p>
+			<pre>
+				apple
+				banana
+				cherry
+			</pre>
+			<p>The for loop does not require an indexing variable to set beforehand. Even strings are iterable objects, they contain a sequence of characters. As such for loop can be used to looping through a string.</p>
+			<pre>
+				for x in "banana":
+				&nbsp;print(x)
+			</pre>
+			<p>The output will be:</p>
+			<pre>
+				b
+				a
+				n
+				a
+				n
+				a
+			</pre>
+		</section>
+		<section class="main-section" id="Functions">
+			<header><h2>Functions</h2></header>
+			<p>A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result.</p>
+			<h3>Creating a Function</h3>
+			<p>In Python a function is defined using the def keyword.</p>
+			<pre>
+				def my_function():
+				&nbsp;print("This is a message inside the function")
+				my_function()
+			</pre>
+			<p>The output will be:</p>
+			<pre>
+				This is a message inside the function
+			</pre>
+			<h3>Arguments</h3>
+			<p>Information can be passed into functions as arguments. Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.</p>
+			<pre>
+				def my_function(a,b):
+				&nbsp;print("x = ", x)
+				&nbsp;print("y = ", y)
+				&nbsp;z = a + b
+				&nbsp;print("sum =", z)
+				my_function(10,15)
+			</pre>
+			<p>The output will be:</p>
+			<pre>
+				x = 10
+				y = 15
+				sum = 25
+			</pre>
+			<p>Note that in above example, the values 10 and 15 are the arguments passed to the function with name "my_function"</p>
+			<h3>Return Statements</h3>
+			<p>Return statements are used to get a value back from the function when it executes. The values received are called Return Values.</p>
+			<pre>
+				def my_function(x,y):
+				&nbsp;print("x = ",x)
+				&nbsp;print("y = ",y)
+				&nbsp;print("sum = ")
+				&nbsp;return x + y
+				print(my_function(10,15))
+			</pre>
+			<h3>Recursion</h3>
+			<p>Recursion is a common mathematical and programming concept. It means that a function calls itself. This has the benefit of meaning that you can loop through data to reach a result. If not used carefully it can be quite easy for a function to become the one which never terminates, or one that uses excess amounts of memory or processor power. However, when written correctly recursion can be a very efficient and mathematically-elegant approach to programming.</p>
+		</section>
+		<section class="main-section" id="Reference">
+			<header><h2>Reference</h2></header>	
+			<p>The Above documentation is made by using information taken from <a href="https://www.w3schools.com/python/default.asp">W3Schools.com</a></p>
+		</section>
+	</main>
+	<footer>
+		<p>Made by LevelZeroCoder</p>
+		<p class="twt">find me on <a href="https://twitter.com/LevelZeroCoder">Twitter</a></p>
+	</footer>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
